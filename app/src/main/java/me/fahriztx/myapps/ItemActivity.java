@@ -5,15 +5,21 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.r0adkll.slidr.Slidr;
+import com.r0adkll.slidr.model.SlidrInterface;
+
 public class ItemActivity extends AppCompatActivity {
 
     private ImageView image;
     private TextView title,description;
+    private SlidrInterface slidr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item);
+
+        slidr = Slidr.attach(this);
 
         image = findViewById(R.id.imageItem);
         title = findViewById(R.id.title);

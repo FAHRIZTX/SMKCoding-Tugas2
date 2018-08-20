@@ -26,13 +26,13 @@ public class MainActivity extends AppCompatActivity {
         itemModelList.add(new ItemModel("Android Debug", "Dndroid Debug adalah suatu proses dimana android anda akan debug", R.mipmap.image_1));
         itemModelList.add(new ItemModel("Play Protect", "Play Protect adalah suatu keamanan yang dibuat oleh google yang di implementasikan didalam aplikasi Play Store", R.mipmap.image_2));
         itemModelList.add(new ItemModel("Fingerprint", "Fingerprint adalah apalaha gatau.", R.mipmap.image_3));
-        itemModelList.add(new ItemModel("Lorem Ipsum 1", "Lorem Ipsum 1 adalah Lorem Ipsum dolor sit amit", R.mipmap.image_2));
-        itemModelList.add(new ItemModel("Lorem Ipsum 2", "Lorem Ipsum 2 adalah Lorem Ipsum dolor sit amit", R.mipmap.image_3));
-        itemModelList.add(new ItemModel("Lorem Ipsum 3", "Lorem Ipsum 3 adalah Lorem Ipsum dolor sit amit", R.mipmap.image_1));
-        itemModelList.add(new ItemModel("Lorem Ipsum 4", "Lorem Ipsum 4 adalah Lorem Ipsum dolor sit amit", R.mipmap.image_2));
-        itemModelList.add(new ItemModel("Lorem Ipsum 5", "Lorem Ipsum 5 adalah Lorem Ipsum dolor sit amit", R.mipmap.image_3));
-        itemModelList.add(new ItemModel("Lorem Ipsum 6", "Lorem Ipsum 6 adalah Lorem Ipsum dolor sit amit", R.mipmap.image_1));
-        itemModelList.add(new ItemModel("Lorem Ipsum 7", "Lorem Ipsum 7 adalah Lorem Ipsum dolor sit amit", R.mipmap.image_3));
+        itemModelList.add(new ItemModel("Lorem Ipsum 1", getString(R.string.lipsum), R.mipmap.image_2));
+        itemModelList.add(new ItemModel("Lorem Ipsum 2", getString(R.string.lipsum), R.mipmap.image_3));
+        itemModelList.add(new ItemModel("Lorem Ipsum 3", getString(R.string.lipsum), R.mipmap.image_1));
+        itemModelList.add(new ItemModel("Lorem Ipsum 4", getString(R.string.lipsum), R.mipmap.image_2));
+        itemModelList.add(new ItemModel("Lorem Ipsum 5", getString(R.string.lipsum), R.mipmap.image_3));
+        itemModelList.add(new ItemModel("Lorem Ipsum 6", getString(R.string.lipsum), R.mipmap.image_1));
+        itemModelList.add(new ItemModel("Lorem Ipsum 7", getString(R.string.lipsum), R.mipmap.image_3));
 
         recyclerAdapter = new RecyclerAdapter(itemModelList, new RecyclerAdapter.OnImageClickListener() {
             @Override
