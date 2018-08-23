@@ -2,12 +2,12 @@ package me.fahriztx.myapps;
 
 public class ItemModel {
 
-    String title,description;
+    String title,lyric;
     int image;
 
-    public ItemModel(String title, String description, int image) {
+    public ItemModel(String title, String lyric, int image) {
         this.title = title;
-        this.description = description;
+        this.lyric = lyric;
         this.image = image;
     }
 
@@ -19,12 +19,12 @@ public class ItemModel {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getLyric() {
+        return lyric;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setLyric(String lyric) {
+        this.lyric = lyric.replace("\\\n", System.getProperty("line.separator"));
     }
 
     public int getImage() {

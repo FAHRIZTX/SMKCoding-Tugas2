@@ -6,32 +6,33 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.r0adkll.slidr.Slidr;
-import com.r0adkll.slidr.model.SlidrInterface;
 
 public class ItemActivity extends AppCompatActivity {
 
     private ImageView image;
-    private TextView title,description;
-    private SlidrInterface slidr;
+    private TextView title,lyric;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item);
 
-        slidr = Slidr.attach(this);
+        Slidr.attach(this);
 
         image = findViewById(R.id.imageItem);
         title = findViewById(R.id.title);
-        description = findViewById(R.id.description);
+        lyric = findViewById(R.id.lyric);
+
 
         String judul = getIntent().getStringExtra("title");
-        String descript = getIntent().getStringExtra("description");
+        String lirik = getIntent().getStringExtra("lyric");
         int images = getIntent().getIntExtra("image", R.mipmap.ic_launcher);
+
+        getSupportActionBar().setTitle(judul);
 
         image.setImageResource(images);
         title.setText(judul);
-        description.setText(descript);
+        lyric.setText(lirik);
 
     }
 

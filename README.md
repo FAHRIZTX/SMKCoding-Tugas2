@@ -2,5 +2,6 @@
 
 # Use :
 - RecyclerView
+- CardView
 - ScrollView
 - Slide To Back
